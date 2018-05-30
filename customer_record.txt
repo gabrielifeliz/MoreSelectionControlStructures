@@ -57,4 +57,16 @@ ELSE IF taxCode == 3
 	Calculate totalAmountDue = purchaseAmount + salesTax
 	Display customerName, purchaseAmount, salesTax, and totalAmountDue
 ENDIF	
+
+
+CHECKS
+customerName = Amy Ramirez, purchaseAmount = 450, taxCode = 0
+output should be Amy Ramirez, $450, $0, $450
+salesTax = 0
+totalAmountDue = 450
+
+customerName = Steven Johnson, purchaseAmount = 175, taxCode = 2
+output should be Steven Johnson, $175, $8.75, $183.75
+salesTax = 175 * 0.05 = 8.75
+totalAmountDue = 175 + 8.75 = 183.75
 -------------------------------------------------------------------------------

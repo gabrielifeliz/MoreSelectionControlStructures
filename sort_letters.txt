@@ -44,4 +44,18 @@ ELSE IF letterThree < letterOne AND letterOne < letterTwo
 ELSE IF letterThree < letterTwo AND letterTwo < letterOne
 	Display letterThree, letterTwo, and letterOne
 ENDIF	
+
+
+CHECKS
+letterOne = A, letterTwo = C, letterThree = B
+output should be A, B, C
+A > B
+B > C
+A, B, C
+
+letterOne = F, letterTwo = D, letterThree = E
+output should be D, E, F
+E > D
+F > E
+D, E, F
 -----------------------------------------------------------

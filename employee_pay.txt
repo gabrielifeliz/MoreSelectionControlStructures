@@ -62,4 +62,14 @@ ELSE IF hoursWorkedWeekly > 60
 ELSE IF payRate > 25
 	Display exceeded pay rate message
 ENDIF
+
+
+CHECKS
+employeeNumber = 207453,  payRate = 35, hoursWorkedWeekly = 60
+output should be an exceeded pay rate message
+Output: "Exceeded pay rate"
+
+employeeNumber = 203588,  payRate = 20, hoursWorkedWeekly = 35
+output should be 203588, $20/hr, 35hrs, $700 
+weeklyPay = 35 * 20 = 700
 ---------------------------------------------------------------------------------------
