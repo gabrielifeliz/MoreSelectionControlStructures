@@ -1,2 +1,2 @@
-# More Structure Control Structures
+# More Selection Control Structures
 May 30, 2018
