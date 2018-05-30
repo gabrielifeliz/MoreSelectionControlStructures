@@ -1,0 +1,47 @@
+1. Read and sort letters
+Design an algorithm that will prompt the user for three letters, 
+receive those letters as input, sort them into ascending sequence 
+and display them to the monitor
+---------------------------------------------------------
+ALGORITHM
+Receive letterOne
+Receive letterTwo
+Receive letterThree
+Sort letters in ascendng sequence through selection
+
+INPUTS
+letterOne
+letterTwo
+letterThree
+
+PROCESSING STEPS
+Receive letterOne
+Receive letterTwo
+Receive letterThree
+Sort letters in ascending sequence through selection
+
+OUTPUTS
+Display sorted letters
+
+
+PSEUDOCODE
+Prompt user for letterOne
+Get letterOne
+Prompt user for letterTwo
+Get letterTwo
+Prompt user for letterThree
+Get letterThree
+IF letterOne < letterTwo AND letterTwo < letterThree
+	Display letterOne, letterTwo, and letterThree
+ELSE IF letterOne < letterThree AND letterThree < letterTwo
+	Display letterOne, letterThree, and letterTwo
+ELSE IF letterTwo < letterOne AND letterOne < letterThree
+	Display letterTwo, letterOne, and letterThree
+ELSE IF letterTwo < letterThree AND letterThree < letterOne
+	Display letterTwo, letterThree, and letterOne
+ELSE IF letterThree < letterOne AND letterOne < letterTwo
+	Display letterThree, letterOne, and letterTwo
+ELSE IF letterThree < letterTwo AND letterTwo < letterOne
+	Display letterThree, letterTwo, and letterOne
+ENDIF	
+-----------------------------------------------------------

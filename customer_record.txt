@@ -1,0 +1,60 @@
+2. Process customer record
+A program is required to read a customer’s name, a purchase amount and a tax code. 
+The tax code has been validated and will be one of the following:
+    0  tax exempt (0%)
+    1  state sales tax only (3%)
+    2  federal and state sales tax (5%)
+    3  special sales tax (7%)
+The program must then compute the sales tax and the total amount due,
+and print the customer’s name, purchase amount, sales tax and total amount due.
+-----------------------------------------------------------------------------------------
+ALGORITHM
+Receive customerName
+Receive purchaseAmount
+Receive taxCode
+Multiply purchaseAmount by tax percent, based on the tax code, to get salesTax
+Add purchaseAmount and  salesTax together to get totalAmountDue
+
+INPUTS
+customerName
+purchaseAmount
+taxCode
+
+PROCESSING STEPS
+Receive customerName
+Receive purchaseAmount
+Receive taxCode
+Multiply purchaseAmount by tax percent, based on the tax code, to get salesTax
+Add purchaseAmount and  salesTax together to get totalAmountDue
+
+OUTPUTS
+Display customerName, purchaseAmount, salesTax and totalAmountDue
+
+
+PSEUDOCODE
+Initialize salesTax to zero
+Initialize totalAmountDue to zero
+Prompt user for customerName
+Get customerName
+Prompt user for purchaseAmount
+Get purchaseAmount
+Prompt user for taxCode
+Get taxCode
+IF taxCode == 0 
+	Set salesTax = 0
+	Set totalAmountDue = purchaseAmount
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ELSE IF taxCode == 1
+	Calculate salesTax = purchaseAmount * 0.03
+	Calculate totalAmountDue = purchaseAmount + salesTax
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ELSE IF taxCode == 2
+	Calculate salesTax = purchaseAmount * 0.05
+	Calculate totalAmountDue = purchaseAmount + salesTax
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ELSE IF taxCode == 3
+	Calculate salesTax = purchaseAmount * 0.07
+	Calculate totalAmountDue = purchaseAmount + salesTax
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ENDIF	
+-------------------------------------------------------------------------------
