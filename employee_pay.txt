@@ -35,7 +35,6 @@ If inputs are valid, calculate weekly pay. Else, display error message
 If 35 hours or less are worked, multiply hoursWorkedWeekly by payRate to get weeklyPay
 Else, calculate weeklyPay by calculating 35 hours of regular payRate 
 and overtime hours at time-and-a-half.
-After calculating weeklyPay, display employeeNumber, payRate, hoursWorkedWeekly, and weeklyPay
 
 
 OUTPUTS
