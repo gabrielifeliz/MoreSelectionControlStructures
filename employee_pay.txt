@@ -16,3 +16,51 @@ Weekly pay calculation: Weekly pay is calculated as hours worked times pay rate.
 If more than 35 hours are worked, payment for the overtime hours worked 
 is calculated at time-and-a-half.
 --------------------------------------------------------------------------------------
+ALGORITHM
+Receive employeeNumber
+Receive payRate
+Receive hoursWorkedWeekly
+
+
+INPUTS
+employeeNumber
+payRate
+hoursWorkedWeekly
+
+PROCESSING STEPS
+Receive employeeNumber
+Receive payRate
+Receive hoursWorkedWeekly
+If inputs are valid, calculate weekly pay. Else, display error message 
+If 35 hours or less are worked, multiply hoursWorkedWeekly by payRate to get weeklyPay
+Else, calculate weeklyPay by calculating 35 hours of regular payRate 
+and overtime hours at time-and-a-half.
+After calculating weeklyPay, display employeeNumber, payRate, hoursWorkedWeekly, and weeklyPay
+
+
+OUTPUTS
+Display employeeNumber, payRate, hoursWorkedWeekly, and weeklyPay
+
+
+PSEUDOCODE
+Initialize weeklyPay to zero
+Prompt user for employeeNumber
+Get employeeNumber
+Prompt user for payRate
+Get payRate
+Prompt user for hoursWorkedWeekly
+Get hoursWorkedWeekly
+IF hoursWorkedWeekly <= 60 AND payRate <= 25
+	IF hoursWorkedWeekly <= 35 
+		Calculate weeklyPay = hoursWorkedWeekly * payRate
+		Display employeeNumber, payRate, hoursWorkedWeekly, and weeklyPay
+	ELSE
+		Calculate weeklyPay = (35 * payRate) + ((hoursWorkedWeekly - 35) * payRate * 1.5)
+		Display employeeNumber, payRate, hoursWorkedWeekly, and weeklyPay
+	ENDIF
+ELSE IF hoursWorkedWeekly > 60
+	Display exceeded maximum hours message
+ELSE IF payRate > 25
+	Display exceeded pay rate message
+ENDIF
+---------------------------------------------------------------------------------------
